@@ -155,7 +155,7 @@ above command will start the bash command of respective Pod
 
 #### NOTE:
 
-- <left><img src="./assets /image-20250915233359748.png" alt="image-20250915233359748" /></left>
+- <left><img src="./assets/image-20250915233359748.png" alt="image-20250915233359748" /></left>
 
 
   **ReplicaSet** is managing the replicas of **Pod**
@@ -167,8 +167,6 @@ above command will start the bash command of respective Pod
 - ReplicaSet manages Pod  
 - Pod is a abstraction of a Container
 - Everything below a Deployment will be managed by Kubernetes
-
-<left><img src="./assets/image-20250916004915354.png" alt="image-20250916004915354" /></left>
 
 
 

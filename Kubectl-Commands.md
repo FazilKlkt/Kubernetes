@@ -6,7 +6,7 @@
 
 ##### command:  `kubectl get pods`
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250915230252926.png" alt="image-20250915230252926" /></left>
+<left><img src="./assets/image-20250915230252926.png" alt="image-20250915230252926" /></left>
 
 
 
@@ -14,7 +14,7 @@
 
 #####  command: `kubectl delete pods [POD_NAME]`
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250915231256662.png" alt="image-20250915231256662" /></left>
+<left><img src="./assets/image-20250915231256662.png" alt="image-20250915231256662" /></left>
 
 
 
@@ -26,7 +26,7 @@
 
 ##### command:  `kubectl create deployment [DEPLOYEMNT_NAME] --image=[CONTAINER_IMAGE_NAME]`
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250915232219482.png" alt="image-20250915232219482" /></left>
+<left><img src="./assets/image-20250915232219482.png" alt="image-20250915232219482" /></left>
 
 
 
@@ -34,7 +34,7 @@
 
 ##### command:  `kubectl get deployments`
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250915232803297.png" alt="image-20250915232803297" /></left>
+<left><img src="./assets/image-20250915232803297.png" alt="image-20250915232803297" /></left>
 
 
 
@@ -42,11 +42,11 @@
 
 ##### command:  `kubectl edit deployment [DEPLOYMENT_NAME]`
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250915234153369.png" alt="image-20250915234153369" /></left>
+<left><img src="./assets/image-20250915234153369.png" alt="image-20250915234153369" /></left>
 
 **Note**: When I edited the `spec->containers->image` from **nginx** to **nginx:1.16**
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250915234801470.png" alt="image-20250915234801470" /></left>
+<left><img src="./assets/image-20250915234801470.png" alt="image-20250915234801470" /></left>
 
 - The new container `nginx-depl-7d9b57bb64-znkn2` is being created
 - Once the new container is active, old container will be deleted
@@ -58,11 +58,11 @@
 
 ##### command: `kubectl expose deployment [DEPLOYMENT_NAME] --type=NodePort --port=80`
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250915235929107.png" alt="image-20250915235929107" /></left>
+<left><img src="./assets/image-20250915235929107.png" alt="image-20250915235929107" /></left>
 
 ###### after exposing the deployment, run `kubectl get services` to get external IP address
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250916000733367.png" alt="image-20250916000733367" /></left>
+<left><img src="./assets/image-20250916000733367.png" alt="image-20250916000733367" /></left>
 
 
 
@@ -76,7 +76,7 @@
 
 ##### command: `kubectl get services`
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250915230818435.png" alt="image-20250915230818435" /></left>
+<left><img src="./assets/image-20250915230818435.png" alt="image-20250915230818435" /></left>
 
 
 
@@ -90,7 +90,7 @@
 
 ##### command: `kubectl get replicaset`
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250915233122002.png" alt="image-20250915233122002" /></left>
+<left><img src="./assets/image-20250915233122002.png" alt="image-20250915233122002" /></left>
 
 
 
@@ -102,7 +102,7 @@
 
 ##### command: `kubectl logs [POD_NAME]`
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250915235646257.png" alt="image-20250915235646257" /></left>
+<left><img src="./assets/image-20250915235646257.png" alt="image-20250915235646257" /></left>
 
 
 
@@ -110,7 +110,7 @@
 
 ##### command: `kubectl describe pod [POD_NAME]`
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250916001154956.png" alt="image-20250916001154956" /></left>
+<left><img src="./assets/image-20250916001154956.png" alt="image-20250916001154956" /></left>
 
 
 
@@ -120,7 +120,7 @@
 
 above command will start the bash command of respective Pod
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250916001533007.png" alt="image-20250916001533007" /></left>
+<left><img src="./assets/image-20250916001533007.png" alt="image-20250916001533007" /></left>
 
 
 
@@ -131,7 +131,7 @@ above command will start the bash command of respective Pod
 - The **`--dry-run=client`** option simulates the action, without actually running it
 - The **`-o yaml`** option prints the file in YAML format
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250916002249389.png" alt="image-20250916002249389" /></left>
+<left><img src="./assets/image-20250916002249389.png" alt="image-20250916002249389" /></left>
 
 
 
@@ -139,7 +139,7 @@ above command will start the bash command of respective Pod
 
 ##### command: `kubectl apply -f nginx-deployment.yaml`
 
-<left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250916003023663.png" alt="image-20250916003023663" /></left>
+<left><img src="./assets/image-20250916003023663.png" alt="image-20250916003023663" /></left>
 
 - After creating the deployment using config file, when i update the **replicas to 2** in config file and apply the deployment again, observe in the below image. 
 
@@ -147,7 +147,7 @@ above command will start the bash command of respective Pod
   - it is showing **`deployment.apps/nginx configured`**
   - this is because, kubernetes is aware when to create new deployment, and when to update
 
-- <left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250916003514203.png" alt="image-20250916003514203" /></left>
+- <left><img src="./assets/image-20250916003514203.png" alt="image-20250916003514203" /></left>
 
 
 
@@ -155,7 +155,8 @@ above command will start the bash command of respective Pod
 
 #### NOTE:
 
-- <left><img src="/home/fazil/.config/Typora/typora-user-images/image-20250915233359748.png" alt="image-20250915233359748" /></leftleft>
+- <left><img src="./assets /image-20250915233359748.png" alt="image-20250915233359748" /></left>
+
 
   **ReplicaSet** is managing the replicas of **Pod**
 
@@ -166,6 +167,8 @@ above command will start the bash command of respective Pod
 - ReplicaSet manages Pod  
 - Pod is a abstraction of a Container
 - Everything below a Deployment will be managed by Kubernetes
+
+<left><img src="./assets/image-20250916004915354.png" alt="image-20250916004915354" /></left>
 
 
 

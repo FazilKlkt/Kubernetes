@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-namespace2
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: example-configmap
+  namespace: my-namespace2
+data:
+  mesg: "Hello"

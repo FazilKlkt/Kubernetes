@@ -1,4 +1,4 @@
-- # Namespace
+# Namespace
 
 
 Namespace can work with only Name-spaced objects, and not cluster-wide objects
